@@ -40,7 +40,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public abstract class DownloadService extends StoragePluginService<DownloadServiceData> {
     protected static final String DOWNLOAD = "Download";
     protected static final String DOWNLOAD_FAILED = "DownloadFailed";
-    private static final int DOWNLOAD_THREAD_COUNT = 6;
+    private static final int DOWNLOAD_THREAD_COUNT = 16;
 
     private BlockingDeque<Object> downloadItemDeque = new LinkedBlockingDeque<>();
     private int filesNeedDownload = 0;
